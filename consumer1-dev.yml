@@ -1,1 +1,18 @@
-1
+spring:
+  application:
+    name: consumer1
+server:
+  port: 8764
+eureka:
+  instance:
+    prefer-ip-address: true #以IP地址注册到服务中心
+    instance-id: http://192.168.140.78:8764 #服务中心的信息显示（如果IP地址不显示的话，进行配置）
+  client:
+    service-url:
+      defaultZone: http://192.168.140.78:8760/eureka/,http://192.168.140.78:8761/eureka/
+provider1:
+  ribbon:
+    # 所要采用的策略
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+env:
+  dev
