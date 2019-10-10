@@ -1,6 +1,12 @@
 spring:
   application:
     name: provider
+  spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5627
+    username: guest
+    password: guest
 server:
   port: 8763
 eureka:
