@@ -19,4 +19,4 @@ provider1:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 env:
   test
-dataType: 54321
+dataType: 123456
