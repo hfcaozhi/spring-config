@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: consumer1
   rabbitmq:
     host: 127.0.0.1
     port: 5627
