@@ -1,3 +1,9 @@
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5627
+    username: guest
+    password: guest
 eureka:
   instance:
     hostname: 192.168.140.78
