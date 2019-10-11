@@ -4,6 +4,11 @@ spring:
     port: 5672
     username: guest
     password: guest
+  cloud:
+    stream:
+      binders:
+        myMessage:
+          group: order
 server:
   port: 8763
 eureka:
