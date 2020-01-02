@@ -7,3 +7,15 @@ eureka:
   client:
     service-url:
       defaultZone: http://192.168.140.78:8760/eureka/,http://192.168.140.78:8761/eureka/
+zuul:
+  routes:
+     myConsumer:
+      path: /myConsumer/**
+      serviceId: consumer1
+      #传递cookie
+      sensitiveHeaders:
+    #简洁写法 自定义路径
+    #consumer1: /myConsumer/**
+    #禁止访问某个接口
+    #ignored-patterns:
+    #  - /myConsumer/getMsg
